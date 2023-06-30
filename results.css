@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    font-family: Hanken Grotesk;
+}
+
+
+main{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+#bluebg{
+    background-color: hsl(252, 100%, 60%);
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    gap: 10px;
+}
+
+#your-result {
+    color: hsl(241, 100%, 89%);
+
+}
+
+#circle-container{
+    width: 7rem;
+    margin: auto;
+}
+#circle{
+    border-radius: 50%;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    aspect-ratio: 1/1;
+
+}
+
+#bignum{
+    color: hsl(0, 0%, 100%);
+    font-size: 3rem;
+    font-weight: bold;
+}
+#smallnum{
+    color: hsl(222, 73%, 88%);
+}
+
+h3{
+    color: hsl(221, 100%, 96%);
+    padding: 0.5rem;
+}
+#you{
+    color: hsl(241, 100%, 89%);
+    margin: 0 2rem 1rem 2rem;
+    width: 77%;
+	margin-inline: auto;
+	line-height: 1.26;
+}
+
+#whitebg{
+    padding: 2rem;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+h4{
+    color: hsl(224, 30%, 27%);
+}
+
+fieldset{
+    border: none;
+    padding: 0.5rem 0 0.5rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+dl{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    color: hsl(241, 100%, 89%);
+
+}
+strong{
+    color:hsl(224, 30%, 27%);
+}
+
+.combine{
+    display: flex;
+    gap: 5px;
+}
+
+#red{
+    background-color: hsl(0, 62%, 93%);
+    .combine{
+        color: hsl(0, 100%, 67%);
+    }
+}
+
+#yellow{
+    background-color: hsl(58, 82%, 94%);
+    .combine{
+        color: hsl(39, 100%, 56%);
+    }
+}
+
+#green{
+    background-color: hsl(84, 81%, 94%);
+    .combine{
+        color: hsl(166, 100%, 37%);
+    }
+}
+
+#blue{
+    background-color: hsl(185, 81%, 94%);
+    .combine{
+        color: hsl(234, 85%, 45%);
+    }
+}
+
+button {
+    border-radius: 20px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(222, 73%, 88%);
+    align-items: center;
+    text-align: center;
+    border: none;
+    height: 40px;
+    font-size: 1.0625rem;
+	font-weight: 700;
+    cursor: pointer;
+}
+button:hover{
+    background-color: hsl(252, 100%, 60%);
+}
+
+
+
+
+
+
+@media only screen and (min-width: 656px){
+    main{
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        width: 43rem;
+        top: 3rem;
+        position: relative;
+    }
+    #bluebg, #whitebg{
+        width: inherit;
+        border-radius: 10px;
+        box-shadow: 3px 6px 20px 0px hsl(222, 73%, 88%);
+        justify-content: space-evenly;
+    }
+}
+
+
+.attribution {
+	margin-block-start: 0.656rem;
+	font-size: 0.6875rem;
+	text-align: center;
+}
+
+.attribution a {
+	color: hsl(228, 45%, 44%);
+}
